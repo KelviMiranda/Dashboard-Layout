@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="assets/js/apexcharts.js"></script>
+    <script defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-icon" id="navIcon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navbar__left">
+          <a href="#">subcribers</a>
+          <a href="#">video management</a>
+          <a href="#" class="active-link">admin</a>
+        </div>
+
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa-solid fa-search"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-clock"></i>
+          </a>
+
+          <a href="#">
+            <img
+              width="30"
+              src="./assets/images/avatar.svg"
+              alt="avatar user"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <!-- main -->
+
+      <main>
+        <div class="main__container">
+          <!-- main title -->
+          <div class="main__title">
+            <img src="./assets/images/hello.svg" alt="avatar dashboard" />
+            <div class="main__greeting">
+              <h1>Hello Coderbite</h1>
+              <p>Welcome to your admin dashboard</p>
+            </div>
+          </div>
+
+          <!-- main cards -->
+          <div class="main__cards">
+            <div class="card">
+              <i class="fa-solid fa-user fa-2x text-lightblue"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of subscribers</p>
+                <span class="font-bold text-title">578</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fa-solid fa-calendar fa-2x text-red"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Times of watching</p>
+                <span class="font-bold text-title">2467</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fa-solid fa-video-camera fa-2x text-yellow"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of videos</p>
+                <span class="font-bold text-title">340</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fa-solid fa-thumbs-up fa-2x text-green"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of Likes</p>
+                <span class="font-bold text-title">614</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ApexChart -->
+
+          <div class="charts">
+            <!-- chart left -->
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h2>Daily Reports</h2>
+                  <p>Cupertino, California, USA</p>
+                </div>
+                <i class="fa-solid fa-usd"></i>
+              </div>
+              <div id="apex1"></div>
+            </div>
+
+            <!-- Chart right -->
+
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <div>
+                  <h2>State Reports</h2>
+                  <p>Cupertino, California, USA</p>
+                </div>
+                <i class="fa-solid fa-usd"></i>
+              </div>
+
+              <div class="chart__right__cards">
+                <div class="card">
+                  <h2>Income</h2>
+                  <p>$75,300</p>
+                </div>
+
+                <div class="card">
+                  <h2>Sales</h2>
+                  <p>$124,100</p>
+                </div>
+
+                <div class="card">
+                  <h2>Users</h2>
+                  <p>3900</p>
+                </div>
+
+                <div class="card">
+                  <h2>Orders</h2>
+                  <p>1881</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside id="sidebar">
+        <div class="sidebar__title">
+            <div class="sidebar__img">
+                <img src="./assets/images/logo.png" alt="logo">
+                <h1>Codersbite</h1>
+            </div>
+            <i class="fa-solid fa-times" id="sidebarIcon"></i>
+        </div>
+
+        <div class="sidebar__menu">
+            <div class="sidebar__link active_menu_link">
+                <i class="fa-solid fa-home"></i>
+                <a href="#">Home</a>
+            </div>
+
+            <h2>MMG</h2>
+            <div class="sidebar__link">
+                <i class="fa-solid fa-user-secret"></i>
+                <a href="#">Admin Managemment</a>
+            </div>
+            <div class="sidebar__link">
+                <i class="fa-solid fa-building"></i>
+                <a href="#">Company Management</a>
+            </div>
+            <div class="sidebar__link">
+                <i class="fa-solid fa-wrench"></i>
+                <a href="#">Employee Managemment</a>
+            </div>
+            <div class="sidebar__link">
+                <i class="fa-solid fa-archive"></i>
+                <a href="#">Warehouse</a>
+            </div>
+
+            <div class="sidebar__link">
+                <i class="fa-solid fa-handshake"></i>
+                <a href="#">Contracts</a>
+            </div>
+
+            <div class="sidebar__link">
+                <i class="fa-solid fa-question-circle"></i>
+                <a href="#">Request</a>
+            </div>
+
+            <div class="sidebar__link">
+                <i class="fa-solid fa-sign-out"></i>
+                <a href="#">Leave Policy</a>
+            </div>
+
+            <div class="sidebar__link">
+                <i class="fa-solid fa-calendar-check"></i>
+                <a href="#">Specialy Days</a>
+            </div>
+
+            
+            <div class="sidebar__link">
+                <i class="fa-solid fa-file"></i>
+                <a href="#">Apply for Leave</a>
+            </div>
+
+            <h2>Payroll</h2>
+            
+            <div class="sidebar__link">
+                <i class="fa-solid fa-money-bill"></i>
+                <a href="#">Payroll</a>
+            </div>
+
+            
+            <div class="sidebar__link">
+                <i class="fa-solid fa-briefcase"></i>
+                <a href="#">Paygrade</a>
+            </div>
+
+            
+            <div class="sidebar__logout">
+                <i class="fa-solid fa-power-off"></i>
+                <a href="#">Log out </a>
+            </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
